@@ -17,8 +17,8 @@ grades.append(grade3)
 grades.append(grade4)
 grades.append(grade5)
 
-biggest = grades[0]
-smallest = grades[0]
+highest = grades[0]
+lowest = grades[0]
 
 total = 0
 for grade in grades:
@@ -37,14 +37,14 @@ else:
     rate = 'Fail'
 
 for grade in grades:
-    if grade > biggest:
-        biggest = grade
-    elif grade < smallest:
-        smallest = grade
+    if grade > highest:
+        highest = grade
+    elif grade < lowest:
+        lowest = grade
 
 print()
 
-print("The biggest grade is:", biggest)
-print("The smallest grade is:", smallest)
+print("The highest grade is:", highest)
+print("The smallest grade is:", lowest)
 print("The sum of the grades:", total)
 print("Average grade:", average, '—',rate)
